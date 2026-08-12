@@ -1,0 +1,10 @@
+{
+  "name": "perture",
+  "platform": "v0",
+  "status": "native-connector-pending",
+  "gateway_resource": "https://app.perture.co/api/integrations/v1",
+  "authorization": "oauth2-pkce",
+  "operations": ["brands:list", "brand:context", "brand:reference", "brand:frontend-contract", "brand:validate"],
+  "generated_app_runtime_access": false,
+  "publication": "private-github-source"
+}
