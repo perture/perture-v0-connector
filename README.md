@@ -1,16 +1,15 @@
-# Perture for v0 (private connector specification)
+# Perture for v0
 
-v0 currently supports bring-your-own MCP servers and MCP tools exposed by
-Vercel Marketplace integrations. It does not provide the same third-party
-code-plugin package surface as Codex or Cursor. Because this integration does
-not rely on MCP, this repository records the safe future adapter contract
-without pretending that an installable v0 plugin already exists.
+Connect v0 to Perture through its bring-your-own MCP connection.
 
-An eventual native integration must call the explicit Perture gateway
-operations from a controlled build-time workflow, use the `v0` client and
-audience, request only the needed brand context, and keep generated apps
-independent from Perture runtime credentials.
+## Connect
 
-The gateway URL in this repository is a release target. No v0 publication,
-Vercel Marketplace registration, connector installation, or Perture app
-deployment is included.
+1. Open a v0 chat or the MCP Connections settings page.
+2. Select `Add MCP` and choose a custom server.
+3. Use `Perture` as the name and `https://app.perture.co/mcp` as the server URL.
+4. Select OAuth and complete the Perture sign-in.
+
+v0 stores the connection. This repository contains no credentials, customer
+data, business rules, prompts, validators, or implementation logic. All
+protected behavior runs on Perture infrastructure and is authorized on every
+request.
